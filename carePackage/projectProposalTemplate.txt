@@ -1,5 +1,5 @@
 Name: 
-Project Title: B
+Project Title: 
 Project Stack: 
 GitHub Repo Link: 
 Project Description: 
