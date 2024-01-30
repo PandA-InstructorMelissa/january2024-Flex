@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% block head %} {% include 'block/head.html' %} {% endblock head %}
+<body>
+    {% block header %} {% include 'block/header.html' %} {% endblock header %}
+    {% block flash %} {% include 'block/flash.html' %} {% endblock flash %}
+    <main>
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <div class="row player">
+            <div class="playerButtons">
+                <button onclick="p1('Rock')"><img src="{% static './img/rock.png' %}" alt=""></button>
+            </div>
+        </div>
+        <form action="">
+            <input type="text" name="p1Choice" id="p1Choice">
+        </form>
+    </main>
+    {% block footer %} {% include 'block/footer.html' %} {% endblock footer %}
+</body>
+</html>

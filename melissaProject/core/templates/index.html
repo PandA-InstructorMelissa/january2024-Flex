@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% block head %} {% include 'block/head.html' %} {% endblock head %}
+<body>
+    {% block header %} {% include 'block/header.html' %} {% endblock header %}
+    {% block flash %} {% include 'block/flash.html' %} {% endblock flash %}
+    <main>
+        <h1>Please Chose a Game</h1>
+        <nav>
+            <a href="/rpsls/">Rock Paper Scissors Lizard Spock</a>
+        </nav>
+    </main>
+    {% block footer %} {% include 'block/footer.html' %} {% endblock footer %}
+</body>
+</html>
